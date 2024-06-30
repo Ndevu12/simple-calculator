@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Simple Calculator app</title>
+
+  <!-- *********************** CSS styles *********************** -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- *********************** Google Fonts Libraray *********************** -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body id="body">
+<div class="container">
+  <header class="header flex">
+    <div class="title">calc</div>
+    <div class="theme-wrapper flex">
+      <div class="label">
+        <span class="number one">1</span>
+        <span class="number second">2</span>
+        <span class="number third">3</span>
+      </div>
+      <div class="theme-switcher flex">
+        <h3 class="theme-title">theme</h3>
+        <div class="switch-toggle">
+          <input name="state-d " type="radio" class="blue-theme" checked="checked">
+          <input name="state-d " type="radio" class="white-theme">
+          <input name="state-d " type="radio" class="purple-theme"> 
+        </div>
+      </div>
+    </div>
+  </header>
+  
+    <div>
+      <form class="form">
+        <input type="text" id="value" class="screen" required>
+        <div class="keys-wrapper">
+          <div class="keys">
+            <input type="button" value="7" onclick="showInput('7')" class="button">
+            <input type="button" value="8" onclick="showInput('8')" class="button">
+            <input type="button" value="9" onclick="showInput('9')" class="button">
+            <input type="button" value="DEL" onclick="del()" class="button delete">
+            <input type="button" value="4" onclick="showInput('4')" class="button">
+            <input type="button" value="5" onclick="showInput('5')" class="button">
+            <input type="button" value="6" onclick="showInput('6')" class="button">
+            <input type="button" value="+" onclick="showInput('+')" class="button arithmetic">
+            <input type="button" value="1" onclick="showInput('1')" class="button">
+            <input type="button" value="2" onclick="showInput('2')" class="button">
+            <input type="button" value="3" onclick="showInput('3')" class="button">
+            <input type="button" value="-" onclick="showInput('-')" class="button arithmetic">
+            <input type="button" value="." onclick="showInput('.')" class="button ">
+            <input type="button" value="0" onclick="showInput('0')" class="button "> 
+            <input type="button" value="/" onclick="showInput('/')" class="button arithmetic">
+            <input type="button" value="*" onclick="showInput('*')" class="button arithmetic">
+            <input type="button" value="RESET" onclick="reset()" class="button reset">
+            <input type="button" value="=" onclick="equal()" class="button submit">
+          </div>
+        </div>
+      </form>
+  
+    </div>
+  </div>
+
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+  
+
+  <!-- JavaScript File Link -->
+  <script src="./index.js"></script>
+
+</body>
+</html>
